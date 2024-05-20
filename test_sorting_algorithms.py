@@ -22,7 +22,7 @@ def get_user_array():
 def paste_array():
     while True:
         try:
-            arr_str = input("Paste your array (up to 50 numbers separated by commas): ")
+            arr_str = input("Paste your array (up to 50 numbers separated by commas( like this: 1,2,35,565,12 etc..)): ")
             arr = [int(x.strip()) for x in arr_str.split(",") if x.strip().isdigit()]
             if len(arr) > 50:
                 print("Array exceeds 50 numbers. Please try again.")
@@ -30,11 +30,12 @@ def paste_array():
                 visualize_array(arr)
                 return arr
         except ValueError:
-            print("Please enter a valid sequence of numbers separated by commas.")
+            print("Please enter a valid sequence of numbers separated by commas like in the example provided.")
 
 def main():
     print("Welcome to kuriakos.ant Python sorting algorithms demonstration script!")
     print("Please select a sorting algorithm to start:")
+    print("or, press Control+C to exit the console application")
 
     sorting_algorithms = {
         1: ("Bubble Sort", bubble_sort),
@@ -49,7 +50,7 @@ def main():
 
     while True:
         try:
-            choice = int(input("Enter the number corresponding to your choice: "))
+            choice = int(input("Enter the number corresponding to your choice of sorting algorithm: "))
             if choice in sorting_algorithms:
                 break
             else:
@@ -60,7 +61,7 @@ def main():
     print(f"You have selected {sorting_algorithms[choice][0]}.")
 
     while True:
-        input_method = input("Do you want to input an array manually or paste an existing array? (m for manual, p for paste): ").lower()
+        input_method = input("Do you want to input an array manually cell by cell or paste an existing array? (m for manual, p for paste): ").lower()
         if input_method == 'm':
             print("You have selected manual array creation.")
             user_array = get_user_array()
