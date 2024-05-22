@@ -19,9 +19,9 @@ It is part of a project for a computer science class.
 
 - Quick Sort
 
-## Example
+## Example Use ( Image )
 
-Here is an ex
+Here is a demonstration of using the terminal application to sort an array with bubble sort : 
 
 
 ## Prerequisites

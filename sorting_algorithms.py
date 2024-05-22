@@ -1,4 +1,5 @@
 # sorting_algorithms.py
+# The actual sorting algorithms are contained in this file , to test them out you must run the ''test_sorting_algorithms.py'' script
 
 def bubble_sort(arr):
     n = len(arr)
