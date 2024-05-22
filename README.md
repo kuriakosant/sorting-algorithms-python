@@ -19,10 +19,11 @@ It is part of a project for a computer science class.
 
 - Quick Sort
 
-## Example Use ( Image )
+## Example Use (Image)
 
-Here is a demonstration of using the terminal application to sort an array with bubble sort : 
+Here is a demonstration of using the terminal application to sort an array with Bubble Sort:
 
+![Example Use](assets/example_use.png)
 
 ## Prerequisites
 
